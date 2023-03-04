@@ -1,4 +1,4 @@
-public class Solution {
+class Solution {
     public String solution(int a, int b) {
         String[] weeks = { "FRI", "SAT", "SUN", "MON", "TUE", "WED", "THU" };
         int[] months = { 31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
