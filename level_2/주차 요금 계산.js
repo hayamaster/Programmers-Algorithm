@@ -1,11 +1,10 @@
 const solution = (fees, records) => {
   const [baseTime, baseFee, unitTime, unitFee] = fees;
-  let recordClone = [...records];
   let map = new Map();
   let dic = {};
   let answer = [];
 
-  records.forEach((info, idx) => {
+  records.forEach((info) => {
     const [time, carNum, InAndOut] = info.split(" ");
     if (InAndOut == "IN") {
       map.set(carNum, changeTimes(time));
@@ -18,6 +17,7 @@ const solution = (fees, records) => {
       map.delete(carNum);
     }
   });
+
   for (const [carNum, time] of map.entries()) {
     if (!dic[carNum]) {
       dic[carNum] = 24 * 60 - 1 - time;
