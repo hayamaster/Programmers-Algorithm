@@ -1,4 +1,4 @@
-// 힌트 확인
+// 힌트 참고
 // 누적합, 투포인트 이용
 
 const solution = (sequence, k) => {
