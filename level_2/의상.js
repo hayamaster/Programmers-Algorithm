@@ -1,3 +1,6 @@
+// 힌트 참고
+// 수식 참고
+
 const solution = (clothes) => {
   const hash = new Map();
   clothes.forEach((arr) => {
